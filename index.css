@@ -1,0 +1,261 @@
+/* background image */
+body, html {
+    height: 100%;
+}
+
+.background {
+    background-image: url("background.JPG");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* name in center of home screen */
+.name {
+    position: absolute;
+    left: 0;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 6px;
+    color: #ffffff;
+}
+
+/* thinking, learning, doing text */
+.text {
+    position: absolute;
+    left: 0;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+}
+
+/* "About" button on home screen */
+.button {
+    position: absolute;
+    background-color: #5C668A;
+    border: 2px solid #5C668A;
+    color: white;   /*text color*/
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #ffffff;
+    color: #5C668A;
+}
+
+/* navigation bar that is mobile-friendly */
+body {margin:0;}
+
+.topnav {
+  overflow: hidden;
+  background-color: #5C668A;
+  box-shadow: 3px 3px 3px #999;   /* for shadow under navbar */
+  -moz-box-shadow: 3px 3px 3px #999;
+  -webkit-box-shadow: 3px 3px 3px #999;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 120%;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;  /* for hover transition time */
+  cursor: pointer;
+}
+
+.topnav a:hover {
+  background-color: white;
+  color: #5C668A;
+  text-decoration: none;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+/* X-Small */
+@media only screen and (min-width: 0px) {
+
+  #logo-ec{
+    float: left;
+  }
+
+  .name {
+    top: 45%;
+    width: 100%;
+    font-size: 200%;
+  }
+
+  .text {
+    top: 53%;
+    width: 100%;
+    font-size: 120%;
+  }
+
+  .button {
+    top: 61%;
+    left: 33%;
+    font-size: 15px;
+    padding: 8px 16px;
+  }
+
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* Small */
+@media only screen and (min-width: 576px) {
+  .name {
+    top: 48%;
+    width: 100%;
+    font-size: 275%;
+  }
+
+  .text {
+    top: 57%;
+    width: 100%;
+    font-size: 140%;
+  }
+
+  .button {
+    top: 68%;
+    left: 41%;
+    padding: 16px 32px;
+  }
+
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* Medium */
+@media only screen and (min-width: 768px){
+
+  #logo-ec{
+    float: left;
+  }
+
+  .name {
+    top: 45%;
+    width: 100%;
+    font-size: 400%;
+  }
+
+  .text {
+    top: 58%;
+    width: 100%;
+    font-size: 140%;
+  }
+
+  .button {
+    top: 68%;
+    left: 42%;
+    padding: 16px 32px;
+  }
+
+  .topnav a:not(:first-child) {display: block;}
+  .topnav a.icon {
+    float: right;
+    display: none;
+  }
+}
+
+/* Large */
+@media only screen and (min-width: 992px) {
+  .name {
+    top: 45%;
+    width: 100%;
+    font-size: 480%;
+  }
+
+  .text {
+    top: 59%;
+    width: 100%;
+    font-size: 160%;
+  }
+
+  .button {
+    top: 68%;
+    left: 44%;
+    padding: 16px 32px;
+  }
+
+  .topnav a:not(:first-child) {display: block;}
+  .topnav a.icon {
+    float: right;
+    display: none;
+  }
+}
+
+/* Extra-Large */
+@media only screen and (min-width: 1366px) {
+  .name {
+    top: 43%;
+    width: 100%;
+    font-size: 550%;
+  }
+
+  .text {
+    top: 58%;
+    width: 100%;
+    font-size: 150%;
+  }
+
+  .button {
+    top: 70%;
+    left: 46%;
+    padding: 16px 32px;
+  }
+
+  .topnav a:not(:first-child) {display: block;}
+  .topnav a.icon {
+    float: right;
+    display: none;
+  }
+}

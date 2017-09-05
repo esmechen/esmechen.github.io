@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="projects.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <title> Esme Chen </title>
+    <title> Esme Chen </title>
+  </head>
+
+
+  <body>
+
+    <!-- navigation bar that is mobile-friendly -->
+    <div class="topnav" id="myTopnav">
+      <a id="logo-ec" href="index.html">E.C.</a>
+      <a href="contact.html">Contact</a>
+      <a href="projects.html">Tech Projects</a>
+      <a href="about.html">About</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <!-- Toggles between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
+    <script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+            document.getElementById("logo-ec").style.width = "100%";
+
+        } else {
+            x.className = "topnav";
+            document.getElementById("logo-ec").style.width = "30%";
+
+        }
+    }
+    </script>
+
+    <!-- My Past Tech Projects -->
+    <br>
+    <h1> My Past Tech Projects </h1>
+    <br>
+    <br>
+
+    <!-- Past Projects -->
+
+      <!-- Home 101 -->
+      <h4> Home-101 with Homie </h4>
+      <a href="https://home-101.github.io/"><img src="home-101.png" width="560" class="projects"></a>
+      <p> This website was created by three of my friends and me. We designed and coded Home 101 which aims to educate students and/or young adults on home economics, finance, and career which are topics that are typically not satisfactorily covered in school. Our website is unlike our competitors because our content is easy to understand and interesting, and everything is presented to you using the same easy-to-use format. </p>
+
+      <!-- Photo Transistor on Arduino Robot -->
+      <br><br><br>
+      <h4> Light-Sensitive Robot </h4>
+      <img src="photoTransistor.png" width="560" class="projects">
+      <p> This code in Arduino C allows the robot to sense light and send data back to the computer monitor. </p>
+
+      <!-- Dancing Robot -->
+      <br><br><br>
+      <h4> Dancing Robot </h4>
+      <img src="dancingRobot.png" width="560" class="projects">
+      <p> This code in Arduino C controls the Servo motors and Pierzo speaker so that the robot dances to the coded music. </p>
+
+      <!-- Multiple LEDs and Piezo Sound on Arduino Robot -->
+      <br><br><br>
+      <h4> LED Light Party </h4>
+      <iframe class="projects" width="560" height="315" src="https://www.youtube.com/embed/IoF9rJQepBM" frameborder="0" allowfullscreen></iframe>
+      <p> This code in Arduino C controls the flashing LED lights pattern and Pierzo sound. </p>
+
+      <!-- New Dog -->
+      <br><br><br>
+      <h4> Image Filter </h4>
+      <img src="olddog.jpg" class="projects">
+      <img src="newdog.jpg" class="projects">
+      <p> This python code places an image filter on this photo of a dog. </p>
+
+      <!-- Text Adventure -->
+      <br><br><br>
+      <h4> Anna's Outfit Assistant </h4>
+      <iframe class="projects" width="560" height="315" src="https://www.youtube.com/embed/UQWJzYNl96s" frameborder="0" allowfullscreen></iframe>
+      <p> This python code helps Anna pick an outfit for her girls' night out. </p>
+
+      <!-- Scratch -->
+      <br><br><br>
+      <h4> Practice in Scratch </h4>
+      <iframe class="projects" allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/168667993/?autostart=false" frameborder="0" allowfullscreen></iframe>
+      <iframe class="projects" allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/168791696/?autostart=false" frameborder="0" allowfullscreen></iframe>
+
+  </body>
+
+</html>

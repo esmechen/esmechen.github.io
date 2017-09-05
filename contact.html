@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="contact.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta name="description" content="contact form example">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <title>Esme Chen</title>
+  </head>
+
+
+  <body>
+    
+    <!-- navigation bar that is mobile-friendly -->
+    <div class="topnav" id="myTopnav">
+      <a id="logo-ec" href="index.html">E.C.</a>
+      <a href="contact.html">Contact</a>
+      <a href="projects.html">Tech Projects</a>
+      <a href="about.html">About</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <!-- Toggles between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
+    <script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+            document.getElementById("logo-ec").style.width = "100%";
+
+        } else {
+            x.className = "topnav";
+            document.getElementById("logo-ec").style.width = "30%";
+
+        }
+    }
+    </script>
+
+    <!-- I'd love to hear from you -->
+    <br><br><br><br><br>
+    <h1> I'd love to hear from you. </h1>
+
+    <!-- resume part -->
+    <h3> For my complete resume, please email me with a request. </h3>
+
+    <!-- contact buttons -->
+    <div class="w3-container" style="padding:90px 80px">
+      <div class="w3-row">
+        <div class="w3-col m4 w3-center">
+          <a href="mailto:someone@example.com?Subject=Hello,%20Esme"><img src="email.png" class="contactButton"></a>
+          <p> esme.chen@yahoo.com </p>
+        </div>
+        <div class="w3-col m4 w3-center">
+          <a href="https://www.linkedin.com/in/esme-chen/"><img src="linkedin.png" class="contactButton"></a>
+          <p> Esme Chen </p>
+        </div>
+        <div class="w3-col m4 w3-center">
+          <a href="https://github.com/esmechen"><i class="fa fa-github contactButton" style="font-size:48px;color:red"></i></a>
+          <p> esmechen </p>
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+</html>

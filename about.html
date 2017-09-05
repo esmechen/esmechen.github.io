@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="about.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <title> Esme Chen </title>
+  </head>
+
+
+  <body>
+    <!-- navigation bar that is mobile-friendly -->
+    <div class="topnav" id="myTopnav">
+      <a id="logo-ec" href="index.html">E.C.</a>
+      <a href="contact.html">Contact</a>
+      <a href="projects.html">Tech Projects</a>
+      <a href="about.html">About</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <!-- Toggles between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
+    <script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+            document.getElementById("logo-ec").style.width = "100%";
+
+        } else {
+            x.className = "topnav";
+            document.getElementById("logo-ec").style.width = "30%";
+
+        }
+    }
+    </script>
+
+    <!-- introduction -->
+    <br><br><br><br>
+    <h1> Hi, my name is Esme. </h1>
+    <h3> I am a <i>curious</i> and <i>passionate</i> rising senior in high school with a strong interest in STEM. </h3>
+
+    <!--images section: musician, athlete, designer/creater, person -->
+    <div class="w3-container" style="padding:30px 80px">
+      <div class="w3-row">
+        <div class="w3-col m3 w3-center">
+          <img src="violin.png" class="image">
+          <p class="imageTitle"> Musician </p>
+          <p class="imageText gridSpace"> I love to play the violin which I have been playing since age 6. I am a part of my school's chamber orchestra and have participated in various other chamber ensembles. </p>
+        </div>
+        <div class="w3-col m3 w3-center">
+          <img src="tennis.png" class="image">
+          <p class="imageTitle"> Athlete </p>
+          <p class="imageText gridSpace"> I love to play tennis, volleyball, and lacrosse. I also like to run and swim. I have participated in my school's varsity tennis team for many years as well as in other tournaments. </p>
+        </div>
+        <div class="w3-col m3 w3-center">
+          <img src="design.png" class="image">
+          <p class="imageTitle"> Designer/Creator </p>
+          <p class="imageText gridSpace"> I love to do hands-on arts-and-crafts such as designing and crafting cards and clothing. Similarly, I enjoy wireframing and coding websites. Simply, I like to make my ideas come to life. </p>
+        </div>
+        <div class="w3-col m3 w3-center">
+          <img src="heart.png" class="image">
+          <p class="imageTitle"> Person </p>
+          <p class="imageText gridSpace"> When I'm not fooling around with my other activities, you can catch me spending time with my family and friends, kicking back with an immersive book or tv series, or harassing people to speak Spanish with me. </p>
+        </div>
+    </div>
+  </div>
+
+    <!-- languages I know -->
+    <h4> Languages </h4>
+
+    <div class="w3-container" style="padding:30px 80px">
+        <div class="w3-row">
+            <div class="w3-col m6 w3-center">
+              <p class="languageTitle"> I have experience with </p>
+              <p class="languageText"> HTML/CSS <br> JavaScript <br> Python <br> Java <br> Arduino C <br> Django </p>
+              <p class="languageText"> Trained in agile development <br> and user-centered design </p>
+            </div>
+            <div class="w3-col m6 w3-center">
+              <p class="languageTitle"> I can speak </p>
+              <p class="languageText"> English <br> Mandarin <br> Cantonese <br> Spanish </p>
+            </div>
+        </div>
+    </div>
+
+
+
+  </body>
+
+</html>
