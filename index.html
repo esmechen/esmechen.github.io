@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <title> Esme Chen </title>
@@ -13,38 +12,116 @@
 
 
   <body>
-    <!-- navigation bar that is mobile-friendly -->
+    <!-- mobile-friendly topnav -->
     <div class="topnav" id="myTopnav">
-      <a id="logo-ec" href="index.html">E.C.</a>
-      <a href="contact.html">Contact</a>
-      <a href="tutoring.html">Tutoring</a>
-      <a href="projects.html">Tech Projects</a>
-      <a href="about.html">About</a>
-      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        <a href="#landing"><img src="favicon.png" width="25px" height="30px"></a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <div class="dropdown">
+            <button class="dropbtn">Blogs</button>
+            <div class="dropdown-content">
+                <a href="http://essy1515.pythonanywhere.com/">Language</a>
+                <a href="#">Tech</a>
+            </div>
+        </div>
+        <a href="javascript:void(0);" style="font-size:20px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <!-- landing div -->
+    <div id="landing">
+        <img src="background.png">
+    </div>
+
+    <!-- about div -->
+    <div id="about">
+        <h1> About Me </h1>
+        <div class="about-parent">
+            <div class="about-child">
+                <h3> Student </h3>
+                <img src="student.png">
+                <ul>
+                    <li> Currently a freshman in college. </li>
+                    <li> (Hopefully) Majoring in Computer Science and minor in Spanish, on a pre-medical track. </li>
+                    <li> Interested in the intersection of C.S. and health. </li>
+                </ul>
+            </div>
+            <div class="about-child">
+                <h3> Coder </h3>
+                <img src="coder.png">
+                <ul>
+                    <li> Obsessed with languages. </li>
+                    <li> Technical: HTML/CSS, Java, Python, Swift, Django </li>
+                    <li> Spoken: English, Mandarin, Cantonese, Spanish. </li>
+                </ul>
+            </div>
+            <div class="about-child">
+                <h3> Personal </h3>
+                <img src="personal.png">
+                <ul>
+                    <li> Love to create: arts and crafts, music, calligraphy. </li>
+                    <li>If you speak to me in Spanish, we're already friends. </li>
+                    <li> Love to read, but paperback books > eBooks. </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- projects div -->
+    <div id="projects">
+        <h1> Projects </h1>
+        <div class="projects-parent">
+            <div class="projects-child">
+                <img src="comingsoon.png">
+                <p> Time Capsule </p>
+            </div>
+            <div class="projects-child">
+                <img src="iac.png">
+                <p> IAC Corporate - Front-End Security Operations Center </p>
+            </div>
+            <div class="projects-child">
+                <img src="searchparty.png">
+                <p> Search Party - iOS application </p>
+            </div>
+            <div class="projects-child">
+                <img src="home-101.png">
+                <p> Home 101- Front-End Web Development </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact div -->
+    <div id="contact">
+        <h1> Get In Touch With Me </h1>
+        <div class="contact-parent">
+            <div class="contact-child">
+                <a href="mailto:someone@example.com?Subject=Hello,%20Esme"><img src="email.png"></a>
+            </div>
+            <div class="contact-child">
+                <a href="https://www.linkedin.com/in/esme-chen/"><img src="linkedin.png"></a>
+            </div>
+            <div class="contact-child">
+                <a href="https://github.com/esmechen"><img src="github.png"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div id="footer">
+        <p> Copyright © 2018. All Rights Reserved. </p>
     </div>
 
     <!-- Toggles between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
     <script>
-    function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-            document.getElementById("logo-ec").style.width = "100%";
-
-        } else {
-            x.className = "topnav";
-            document.getElementById("logo-ec").style.width = "30%";
-
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
         }
-    }
     </script>
-
-    <!-- background image, name, and button -->
-    <div class="background">
-      <div class="name"> Esme Chen </div>
-      <div class="text"> learning, thinking, doing </div>
-      <a href="about.html"><button class="button button"> About </button></a>
-    </div>
 
   </body>
 
