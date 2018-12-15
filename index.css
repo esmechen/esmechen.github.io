@@ -121,7 +121,6 @@ h1, h3 {
 
 p, li {
     text-align: center;
-    padding: 10px;
     font-size: 18px;
     font-family: 'Raleway', sans-serif;
     line-height: 25px;
@@ -137,17 +136,13 @@ li {
 
 /* about div */
 #about {
-    background-color: white;
-    margin-top: -10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .about-parent {
     display: flex;
-    justify-content: space-between;
-}
-
-.about-child {
-    padding: 0px;
+    justify-content: space-around;
 }
 
 #about img {
@@ -158,16 +153,20 @@ li {
     margin-right: auto;
 }
 
+.about-description {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
 /* projects div */
 #projects {
     background-color: #E3DCCE;
-    margin-top: -10px;
     padding: 25px;
 }
 
 .projects-parent {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .projects-child {
@@ -189,7 +188,6 @@ li {
 /* contact div */
 #contact {
     background-color: white;
-    margin-top: -10px;
     padding: 25px;
 }
 
@@ -209,12 +207,15 @@ li {
 
 .contact-child:hover {
     opacity: 0.7;
+    transition-duration: 0.4s;
 }
 
+/* footer div */
 #footer {
     background-color: #E3DCCE;
-    margin-bottom: -15px;
+    margin-bottom: -20px;
 }
+
 
 /* large screen */
 @media screen and (min-width: 900px) {
@@ -223,7 +224,7 @@ li {
     }
 
     #about .about-child {
-        width: 33%;
+        width: 33.3%;
     }
 
     #projects > .projects-parent {
