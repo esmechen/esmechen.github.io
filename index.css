@@ -144,7 +144,7 @@ li {
 
 .about-parent {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .about-child {
@@ -168,7 +168,7 @@ li {
 
 .projects-parent {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .projects-child {
