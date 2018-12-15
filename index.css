@@ -139,7 +139,6 @@ li {
 #about {
     background-color: white;
     margin-top: -10px;
-    padding: 25px;
 }
 
 .about-parent {
@@ -148,7 +147,7 @@ li {
 }
 
 .about-child {
-    padding: 0px 10px 0px 10px;
+    padding: 0px;
 }
 
 #about img {
