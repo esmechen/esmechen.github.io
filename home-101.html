@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- PROJECT PAGE TEMPLATE -->
+
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="project.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <title> Esme Chen </title>
+  </head>
+
+
+  <body>
+    <!-- mobile-friendly topnav -->
+    <div class="topnav" id="myTopnav">
+        <a href="index.html"><img src="favicon.png" width="25px" height="30px"></a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#contact">Contact</a>
+        <div class="dropdown">
+            <button class="dropbtn">Blogs</button>
+            <div class="dropdown-content">
+                <a href="http://essy1515.pythonanywhere.com/">Language</a>
+                <a href="#">Tech</a>
+            </div>
+        </div>
+        <a href="javascript:void(0);" style="font-size:20px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <!-- project description -->
+    <div id="project-description">
+        <h1> Home 101 </h1>
+        <h2> Front-End Web Development & Content Creation </h2>
+        <h4> HTML CSS Javascript <h4>
+        <p> This was a fun project that three girls and I worked on during the Girls Who Code Summer Immersion Program. We created Home 101 to be a creative educational tool that would help students and young adults with home tasks and responsibilities that are not taught in school. We produced content related to finances, home chores, and career. </p>
+    </div>
+
+    <!-- project details -->
+    <div id="project-details">
+        <img src="home-101.PNG" width="60%">
+        <img src="home-101-lessons.PNG" width="60%">
+        <img src="home-101-healthcare.PNG" width="60%">
+        <a href="https://home-101.github.io/"><p> Enter Site </p></a>
+    </div>
+
+    <!-- footer -->
+    <div id="footer">
+        <p> Copyright © 2018. All Rights Reserved. </p>
+        <div class="contact-parent">
+            <div class="contact-child">
+                <a href="mailto:someone@example.com?Subject=Hello,%20Esme"><img src="email.png"></a>
+            </div>
+            <div class="contact-child">
+                <a href="https://www.linkedin.com/in/esme-chen/"><img src="linkedin.png"></a>
+            </div>
+            <div class="contact-child">
+                <a href="https://github.com/esmechen"><img src="github.png"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toggles between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+  </body>
+
+</html>

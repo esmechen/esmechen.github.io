@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- PROJECT PAGE TEMPLATE -->
+
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="project.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <title> Esme Chen </title>
+  </head>
+
+
+  <body>
+    <!-- mobile-friendly topnav -->
+    <div class="topnav" id="myTopnav">
+        <a href="index.html"><img src="favicon.png" width="25px" height="30px"></a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#contact">Contact</a>
+        <div class="dropdown">
+            <button class="dropbtn">Blogs</button>
+            <div class="dropdown-content">
+                <a href="http://essy1515.pythonanywhere.com/">Language</a>
+                <a href="#">Tech</a>
+            </div>
+        </div>
+        <a href="javascript:void(0);" style="font-size:20px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <!-- project description -->
+    <div id="project-description">
+        <h1> Search Party </h1>
+        <h2> iOS Application </h2>
+        <h4> Swift JSON Express <h4>
+        <p> During my internship with IAC, the other interns and I worked on an iOS application that allows users to create their own scavenger hunts using location-based landmarks and share their hunts on a public board. On the other end, users can also play scavenger hunts depending on their location. </p>
+    </div>
+
+    <!-- project details -->
+    <div id="project-details">
+        <img src="search-party-create-hunt-1.PNG" width="20%">
+        <img src="search-party-create-hunt-2.PNG" width="20%">
+        <img src="search-party-hunt-list.PNG" width="20%">
+        <img src="search-party-completed-hunt.PNG" width="20%">
+    </div>
+
+    <!-- footer -->
+    <div id="footer">
+        <p> Copyright © 2018. All Rights Reserved. </p>
+        <div class="contact-parent">
+            <div class="contact-child">
+                <a href="mailto:someone@example.com?Subject=Hello,%20Esme"><img src="email.png"></a>
+            </div>
+            <div class="contact-child">
+                <a href="https://www.linkedin.com/in/esme-chen/"><img src="linkedin.png"></a>
+            </div>
+            <div class="contact-child">
+                <a href="https://github.com/esmechen"><img src="github.png"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toggles between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+  </body>
+
+</html>
