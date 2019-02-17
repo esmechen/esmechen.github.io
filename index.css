@@ -150,7 +150,7 @@ li {
 #photo-me {
     width: 220px;
     height: 150px;
-    transform: rotate(180deg);
+    transform: rotate(90deg);
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -164,7 +164,6 @@ li {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    transform: rotate(90deg);
 }
 
 .about-description {
