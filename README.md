@@ -2,5 +2,5 @@
 My Personal Website
 
 
-Please view at https://esmechen.github.io/
+View it at https://esmechen.github.io/
 
