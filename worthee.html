@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="project.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <title> Esme Chen </title>
+  </head>
+
+  <body>
+    <!-- mobile-friendly topnav -->
+    <div class="topnav" id="myTopnav">
+        <a href="index.html"><img src="favicon.png" width="25px" height="30px"></a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#contact">Contact</a>
+        <div class="dropdown">
+            <button class="dropbtn">More</button>
+            <div class="dropdown-content">
+                <a href="http://essy1515.pythonanywhere.com/">Spanish Blog</a>
+                <a href="https://esmesphotography.crevado.com/">Photography</a>
+            </div>
+        </div>
+        <a href="javascript:void(0);" style="font-size:20px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <!-- project description -->
+    <div id="project-description">
+        <h1> DALI Lab x Worthee Collaboration </h1>
+        <h2> Natural Language Processing </h2>
+        <h4> Ruby / Python / Watson Tone Analyzer & Knowledge Studio <h4>
+        <p> Our team of designers, developers, and project manager at the DALI Lab
+            worked in close partnership with executives from Worthee to incorporate emotion sentiment
+            analysis into the Worthee mobile application to rate reliability of member reviews.
+            As a developer on this project, I worked on creating a custom-trained model for reliable reviews by
+            annotating a dataset of real reviews given to us by our Worthee partner using Watson Knowledge Studio.
+            I also helped with incorporating the Watson Tone Analyzer API into the application. </p>
+    </div>
+
+    <!-- project details -->
+    <div id="project-details">
+
+        <h3>About</h3>
+        <p> Worthee is an app with the goal of helping low wage workers attain their dream jobs.
+            To accomplish this, Worthee allows employees to review other coworkers.
+            As the app stands right now (in fall 2019), every review must be approved or denied by
+            a member of the Worthee team which takes up time and energy. Our development goal for the
+            term at the DALI Lab was to create an AI system that would filter out  unhelpful or negative
+            reviews and assign each member a personal “credibility score” based on their history of
+            negative reviews written. By making the review system more efficient, we hoped to help
+            Worthee in their quest of empowering low wage workers. </p>
+
+        <h3>Development Progress</h3>
+        <p> The main development goal this term was to integrate artificial intelligence functionality
+            into the Worthee application that would analyze Worthee user reviews based on varying degrees
+            of emotion. The returned data on user reviews was then used to assign reviews scores on a
+            continuum from “good” to “bad.” This would automate the process of approving or disapproving
+            user reviews, which is currently (as of fall 2019) being manually done from Worthee’s administration dashboard. </p>
+
+        <h3>App Access and Tools Used</h3>
+        <p> Worthee reviews were scored using the IBM Watson Tone Analyzer API service, which analyzed words
+            and sentences for varying degrees of emotions, which included the following: anger, fear, joy, sadness,
+            analytical, confident, tentative. In the testing stage, the Tone Analyzer API was called using Insomnia
+            and a Python script that pulled Worthee reviews from a spreadsheet, funneled them to the IBM Tone Analyzer
+            API, and returned emotion sentiment data. The client module code to call the Tone Analyzer API was written
+            in Ruby, and the Ruby component of the online IDE Repl.ie was used to test scoring and parsing capabilities
+            of the module before integrating it to Worthee’s codebase. IBM Watson Knowledge Studio was used to
+            annotate Worthee reviews to create a custom-trained model. </p>
+
+        <h3> Core Functionality: Review Filtering </h3>
+        <h4> Using Watson Tone Analyzer API </h4>
+        <p> After getting the necessary credentials and figuring out the optimal endpoint to which to make our API calls,
+            I made some manual calls to the API using our own pre-generated text using the REST client Insomnia to see
+            what tones Watson would discover in each. For example, to learn more about how Watson evaluates a comment
+            as the somewhat nebulous quality of “Tentative,” I made some calls on sentences that may be encountered in
+            Worthee, such as “I’m not sure who this coworker is” and observed Watson’s JSON response. Seeing examples
+            of Watson analyzing custom sentences allowed us, the two developers working on the project, a clearer picture of how Watson’s sentiment analysis values
+            align with what we consider “high quality” comments, and allowed us to familiarize ourselves with the
+            working components of the API client. </p>
+        <h4> Training Model </h4>
+        <p> The next step after getting individual API calls to run was to write a script to analyze a dataset of
+            real reviews from the Worthee app, given to us from Worthee executives. I annotated
+            these Worthee reviews in IBM’s Knowledge Studio and contributed to writing a Python script to extract the first 1000 comments
+            from Worthee’s already-existing comment database, run Watson’s sentiment analysis on each, and construct
+            a Pandas dataframe to hold the returned sentiment values. The dataframe was structured to hold the text
+            comment, a value ranging from [0...1) for each of the seven tones Watson analyzes, a column of that
+            comment’s length, and a 0 or 1 to represent whether the Worthee team had manually approved or
+            disapproved that comment in the past.  My co-developer and I planned on using this dataframe to manually train a custom
+            Watson Tone Analyzer model so that it could be tuned more precisely to the qualities of a satisfactory
+            Worthee comment. We did not end up using this dataframe due to time and work constraints, but the creation
+            of the dataframe was useful for cross-referencing Watson sentiment analysis values with whether or not
+            a comment had been deemed satisfactory by the Worthee Team. It became much clearer what a truly high
+            quality comment looked like in Worthee, and the sentiment values that often accompany these good comments. </p>
+        <h4> An annotated sample review in IBM Knowledge Studio (censored for confidentiality) </h4>
+        <img src="annotated-review.png" width="60%">
+        <h4> An example of Watson analysis of some real in-app comments (censored for confidentiality) </h4>
+        <img src="analyzed-reviews.png" width="60%">
+
+    </div>
+
+    <!-- footer -->
+    <div id="footer">
+        <p> © Esme Chen 2020 </p>
+        <div class="contact-parent">
+            <div class="contact-child">
+                <a href="mailto:esme.chen.22@dartmouth.edu?Subject=Hello,%20Esme"><img src="email.png"></a>
+            </div>
+            <div class="contact-child">
+                <a href="https://www.linkedin.com/in/esme-chen/"><img src="linkedin.png"></a>
+            </div>
+            <div class="contact-child">
+                <a href="https://github.com/esmechen"><img src="github.png"></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="project.js"></script>
+  </body>
+
+</html>

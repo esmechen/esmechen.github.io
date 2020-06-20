@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="project.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <title> Esme Chen </title>
+  </head>
+
+  <body>
+    <!-- mobile-friendly topnav -->
+    <div class="topnav" id="myTopnav">
+        <a href="index.html"><img src="favicon.png" width="25px" height="30px"></a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#contact">Contact</a>
+        <div class="dropdown">
+            <button class="dropbtn">More</button>
+            <div class="dropdown-content">
+                <a href="http://essy1515.pythonanywhere.com/">Spanish Blog</a>
+                <a href="https://esmesphotography.crevado.com/">Photography</a>
+            </div>
+        </div>
+        <a href="javascript:void(0);" style="font-size:20px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <!-- project description -->
+    <div id="project-description">
+        <h1> Auracle App </h1>
+        <h2> iOS App Development </h2>
+        <h4> Swift XCode <h4>
+        <p> I worked on the Auracle application as part of my first-year research in the Auracle Lab, during
+            which I was mentored by Professor Kotz and Sougata Sen. My research project was titled, "A mobile
+            application for aggregating, storing, and presenting Auracle-generated eating behavior data."
+            It focused on (1) prompting the Auracle’s user and collecting Ecological Momentary Assessment (EMA)
+            responses from the user and (2) receiving, processing, displaying, and storing data from the
+            Auracle wearable device. </p>
+    </div>
+
+    <!-- project details -->
+    <div id="project-details">
+
+        <h3>About the Auracle Project</h3>
+        <p> The overall Auracle project is two-fold: <br><br>
+            (1) The <i> Auracle device </i> is an earpiece that detects the wearer’s real-time
+            eating patterns, such as the time, length, and frequency of eating episodes, in
+            free-living conditions. <br>
+            (2) The <i> Auracle mobile application</i>, a crucial component of the research
+            process, is an iOS mobile application that connects the Auracle device to the user’s personal
+            smartphone via Bluetooth Low Energy (BLE). The app receives, processes, displays, and
+            stores real-time data from the Auracle device. The Auracle application was originally developed
+            by the DALI Lab. <br>
+        </p>
+
+        <h3> My Contributions </h3>
+        <p> I contributed to the iOS application by adding two new features, which were (1) prompting
+            the Auracle’s user and collecting Ecological Momentary Assessment (EMA) responses from the
+            user and (2) receiving, processing, displaying, and storing data from the Auracle wearable device. </p>
+        <h4> 1. EMAs to Gather Information About Eating Episodes </h4>
+        <p> Several lab studies using the Auracle device require periodic user response. I added functionality to allow the app to periodically prompt the user for an EMA response. When a user selects “Fill Out Now” in the alert, the screen transitions to a horizontal paging UIScrollView that enables the user to easily scroll between questions accessed from a remote database. Users can respond to each question using a slider. The slider has a configurable lower and upper response bound (e.g., “not at all” to “extremely”) which maps to a response from 0 to 100 in the backend. After answering the last question, the user taps “Done,” and the question ID, time stamp, question, and response value are stored locally in the phone. At the end of the study, the researcher can export the aggregated user responses in the form of a CSV. </p>
+        <img src="emas.png" width="60%">
+        <h5> A pop-up alert appears every 10 minutes, prompting the user with a new EMA (left).
+             One of the several EMA questions displayed in a horizontal paging UIScrollView (right). </h5>
+        <img src="csv.png" width="60%">
+        <h5> Data from an EMA exported in a CSV file. </h5>
+        <h4> 2. The Connection Between the Auracle App & Auracle wearable hardware via Bluetooth </h4>
+        <img src="bluetooth-connection.png" width="60%">
+        <h5> The application before connection with Auracle (left), searching for Bluetooth devices to connect to (middle), and after connection with Auracle (right). </h5>
+        <p> In this part of the project, I worked on connecting the Auracle app to the Auracle
+            wearable device via a Bluetooth connection, as well as processing, displaying, and storing the data received.
+            To initialize the communication between an Auracle device and a
+            phone, the phone should be paired with the Auracle device. When the
+            app is launched, a “Connect Auracle" button appears. Upon tapping
+            the button, the app scans for and displays nearby Auracle devices in a
+            list view. The user chooses an Auracle device to connect to, and the
+            “Status” screen changes to indicate a successful connection.
+            The app now receives data from the Auracle device. The data are
+            displayed in a daily timeline and stored in the phone’s local
+            database according to the message structure in the figure shown below. Finally, the
+            researcher is able to access all transmitted data by exporting the
+            aggregated data in a spreadsheet (CSV) file. </p>
+        <img src="message.png" width="60%">
+        <h5> The messages transmitted from the Auracle BLE are in hexadecimal and follow the structure shown above. </h5>
+
+    </div>
+
+    <!-- footer -->
+    <div id="footer">
+        <p> © Esme Chen 2020 </p>
+        <div class="contact-parent">
+            <div class="contact-child">
+                <a href="mailto:esme.chen.22@dartmouth.edu?Subject=Hello,%20Esme"><img src="email.png"></a>
+            </div>
+            <div class="contact-child">
+                <a href="https://www.linkedin.com/in/esme-chen/"><img src="linkedin.png"></a>
+            </div>
+            <div class="contact-child">
+                <a href="https://github.com/esmechen"><img src="github.png"></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="project.js"></script>
+  </body>
+
+</html>
