@@ -11,11 +11,11 @@ function myFunction() {
 
 
 // The typewriter effect for the intro text in landing div in index.html
-const introArray = ["is happy to see you here!", "is a rising junior at Dartmouth College.",
-             "is interested in healthcare and technology.",
+const introArray = ["is happy to see you here!", "is a senior at Dartmouth College.",
+             "is interested in medicine and technology.",
              "studies neuroscience and computer science.", "is a violinist.",
-             "likes to play tennis.", "is into portrait photography.", "is an avid reader.",
-             "can speak Mandarin, Cantonese, and Spanish.", "likes folk and indie music.",
+             "likes to play tennis.", "is into photography.", "is an avid reader.",
+             "can speak Mandarin, Cantonese, and Spanish.",
              "likes lemon tarts and tiramisu cheesecake."];
 
 let count = 0;  // refers to the block of text
