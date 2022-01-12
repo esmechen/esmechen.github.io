@@ -15,7 +15,7 @@ const introArray = ["is happy to see you here!", "is a senior at Dartmouth Colle
              "is interested in medicine and technology.",
              "studies neuroscience and computer science.", "is a violinist.",
              "likes to play tennis.", "is into photography.", "is an avid reader.",
-             "can speak Mandarin, Cantonese, and Spanish.",
+             "loves learning languages.",
              "likes lemon tarts and tiramisu cheesecake."];
 
 let count = 0;  // refers to the block of text
